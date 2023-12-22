@@ -17,6 +17,8 @@ font = ('Arial', 15)
 
 window = sg.Window('Zip Extractor', layout=layout, font=font)
 while True:
-    events, values = window.read()
+        events, values = window.read()
+        print(events, values)
+        folder = values['folder'][0].split(';')
 
 window.close()
